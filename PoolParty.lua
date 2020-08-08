@@ -19,12 +19,12 @@ SLASH_POOL_PARTY2 = '/poolparty'
 SlashCmdList["POOL_PARTY"] = function(msg)
 	local subzone = GetMinimapZoneText();
 	if subzone == "Razor Hill"
-		then t:SetColorTexture(0, 0, 1)
+		then t:SetColorTexture(0, 1, 0)
 		end
 
 	local honorKills, _, _ = GetPVPLifetimeStats();
 	if honorKills >= 15
-		then t:SetColorTexture(0, 1, 0)
+		then t:SetColorTexture(0, 0, 1)
 		end
 
 end
