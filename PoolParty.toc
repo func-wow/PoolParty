@@ -1,0 +1,4 @@
+## Interface: 50001
+## Title: Pool Party Helper
+## Notes: Baby's first AddOn
+PoolParty.lua
