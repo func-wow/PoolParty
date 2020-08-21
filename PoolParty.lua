@@ -18,13 +18,13 @@ SLASH_POOL_PARTY1 = '/pp'
 SLASH_POOL_PARTY2 = '/poolparty'
 SlashCmdList["POOL_PARTY"] = function(msg)
 	local subzone = GetMinimapZoneText();
-	if subzone == "Razor Hill"
-		then t:SetColorTexture(0, 1, 0)
+	if subzone == "Razor Hill" -- If rezzed at Razor Hill
+		then t:SetColorTexture(0, 1, 0) -- Color the square Green
 		end
 
 	local honorKills, _, _ = GetPVPLifetimeStats();
-	if honorKills >= 15
-		then t:SetColorTexture(0, 0, 1)
+	if honorKills >= 15 -- If done 15 kills complete
+		then t:SetColorTexture(0, 0, 1) -- Color the square Blue
 		end
 
 end
