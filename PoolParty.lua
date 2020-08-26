@@ -1,5 +1,5 @@
 -- @Date:   2020-08-08T13:05:44-04:00
--- @Last modified time: 2020-08-26 14:08:59
+-- @Last modified time: 2020-08-26 14:08:46
 
 
 local locFrame, locEvents = CreateFrame("Frame", nil, UIParent), {}
@@ -16,7 +16,7 @@ locFrame:Show()
 local pvpFrame, pvpEvents = CreateFrame("Frame", nil, UIParent), {}
 pvpFrame:SetFrameStrata("BACKGROUND")
 pvpFrame:SetWidth(128) -- Set these to whatever height/width is needed
-pvpFrame:SetHeight(128) -- for your Texture
+pvpFrame:SetHeight(64) -- for your Texture
 pvpFrame:SetPoint("LEFT", 0, -32)
 local pvpTexture = pvpFrame:CreateTexture(nil, "BACKGROUND")
 pvpTexture:SetColorTexture(0, 0, 0)
@@ -27,7 +27,7 @@ pvpFrame:Show()
 local ingameFrame, ingameEvents = CreateFrame("Frame", nil, UIParent), {}
 ingameFrame:SetFrameStrata("BACKGROUND")
 ingameFrame:SetWidth(128) -- Set these to whatever height/width is needed
-ingameFrame:SetHeight(128) -- for your Texture
+ingameFrame:SetHeight(64) -- for your Texture
 ingameFrame:SetPoint("LEFT", 0, 96)
 local ingameTexture = ingameFrame:CreateTexture(nil, "BACKGROUND")
 ingameTexture:SetColorTexture(0, 0, 0)
@@ -38,7 +38,7 @@ ingameFrame:Show()
 local deadFrame, deadEvents = CreateFrame("Frame", nil, UIParent), {};
 deadFrame:SetFrameStrata("BACKGROUND")
 deadFrame:SetWidth(128) -- Set these to whatever height/width is needed
-deadFrame:SetHeight(128) -- for your Texture
+deadFrame:SetHeight(64) -- for your Texture
 deadFrame:SetPoint("LEFT", 0, -96)
 local deadTexture = deadFrame:CreateTexture(nil, "BACKGROUND")
 deadTexture:SetColorTexture(0, 0, 0)
