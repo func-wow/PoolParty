@@ -1,5 +1,5 @@
 -- @Date:   2020-08-08T13:05:44-04:00
--- @Last modified time: 2020-08-26 14:08:46
+-- @Last modified time: 2020-08-30 21:08:14
 
 
 local locFrame, locEvents = CreateFrame("Frame", nil, UIParent), {}
@@ -49,7 +49,7 @@ deadFrame:Show()
 
 function locEvents:ZONE_CHANGED(...)
 	local subzone = GetMinimapZoneText()
-	if (subzone == "Razor Hill" or subzone == "Thelsamar") then
+	if (subzone == "Razor Hill" or subzone == "Bloodhoof Village") then
 		locTexture:SetColorTexture(1, 1, 1)
 	else
 		locTexture:SetColorTexture(0, 0, 0)
